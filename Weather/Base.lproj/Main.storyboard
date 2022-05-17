@@ -78,7 +78,7 @@
                                 <rect key="frame" x="0.0" y="140" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="166" id="yuA-pH-Wtd" userLabel="WeatherCell" customClass="NowForecastTableViewCell" customModule="Weather" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="166" id="yuA-pH-Wtd" userLabel="WeatherCell" customClass="CurrentForecastTableViewCell" customModule="Weather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="166"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yuA-pH-Wtd" id="15c-YL-MGQ">
@@ -151,6 +151,13 @@
                                                 <constraint firstItem="gYR-iK-Qd5" firstAttribute="top" secondItem="gaa-hB-alb" secondAttribute="bottom" constant="8" id="pSX-Ph-ubv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainLabel" destination="fBg-ou-FP9" id="Evb-sc-V5A"/>
+                                            <outlet property="temperatureLabel" destination="hPy-IP-hPy" id="9DB-1o-8FU"/>
+                                            <outlet property="weatherIconImageView" destination="FIK-Ec-A3k" id="B9b-v7-qhL"/>
+                                            <outlet property="windDirectionLabel" destination="rai-aU-Nx2" id="gZm-88-L7o"/>
+                                            <outlet property="windSpeedLabel" destination="C8R-hS-vaN" id="1wx-qG-YG8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
