@@ -20,6 +20,9 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         title = city?.name
         tableView.register(HourlyTableViewCell.self, forCellReuseIdentifier: "CELL")
         tableView.rowHeight = UITableView.automaticDimension
