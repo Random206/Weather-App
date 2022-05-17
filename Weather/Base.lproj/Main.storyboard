@@ -98,48 +98,57 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rai-aU-Nx2" userLabel="Wind Direction">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rai-aU-Nx2" userLabel="Wind Direction">
                                                     <rect key="frame" x="98" y="117" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8R-hS-vaN" userLabel="Wind Speed">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8R-hS-vaN" userLabel="Wind Speed">
                                                     <rect key="frame" x="98" y="89" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-iK-Qd5" userLabel="Wind Direction Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-iK-Qd5" userLabel="Wind Direction Label">
                                                     <rect key="frame" x="20" y="118" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-hB-alb" userLabel="Wind Speed Label">
-                                                    <rect key="frame" x="20" y="89" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-hB-alb" userLabel="Wind Speed Label">
+                                                    <rect key="frame" x="20" y="89" width="70" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-ou-FP9" userLabel="Main Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-ou-FP9" userLabel="Main Label">
                                                     <rect key="frame" x="98" y="45" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="fBg-ou-FP9" firstAttribute="top" secondItem="hPy-IP-hPy" secondAttribute="bottom" constant="8" id="0Io-Ow-pVK"/>
+                                                <constraint firstItem="fBg-ou-FP9" firstAttribute="leading" secondItem="hPy-IP-hPy" secondAttribute="leading" id="9KA-1O-6Ps"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fBg-ou-FP9" secondAttribute="trailing" constant="20" symbolic="YES" id="BNA-xf-gTe"/>
+                                                <constraint firstItem="rai-aU-Nx2" firstAttribute="top" secondItem="C8R-hS-vaN" secondAttribute="bottom" constant="7" id="H0X-w4-qTw"/>
+                                                <constraint firstItem="fBg-ou-FP9" firstAttribute="leading" secondItem="rai-aU-Nx2" secondAttribute="leading" id="Hec-TK-IWt"/>
                                                 <constraint firstItem="FIK-Ec-A3k" firstAttribute="top" secondItem="15c-YL-MGQ" secondAttribute="topMargin" id="KSx-Gn-y88"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C8R-hS-vaN" secondAttribute="trailing" constant="20" symbolic="YES" id="R49-Rz-BAE"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rai-aU-Nx2" secondAttribute="trailing" constant="20" symbolic="YES" id="SKD-ck-SUj"/>
+                                                <constraint firstItem="C8R-hS-vaN" firstAttribute="leading" secondItem="gaa-hB-alb" secondAttribute="trailing" constant="8" symbolic="YES" id="YYN-jf-Gqp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gYR-iK-Qd5" secondAttribute="bottom" constant="16" id="ZbK-LB-dnm"/>
+                                                <constraint firstItem="fBg-ou-FP9" firstAttribute="leading" secondItem="C8R-hS-vaN" secondAttribute="leading" id="aio-cP-inO"/>
                                                 <constraint firstItem="FIK-Ec-A3k" firstAttribute="leading" secondItem="15c-YL-MGQ" secondAttribute="leadingMargin" id="bmm-rO-P8G"/>
+                                                <constraint firstItem="rai-aU-Nx2" firstAttribute="leading" secondItem="gYR-iK-Qd5" secondAttribute="trailing" constant="36" id="bq0-tY-V1M"/>
+                                                <constraint firstItem="C8R-hS-vaN" firstAttribute="top" secondItem="fBg-ou-FP9" secondAttribute="bottom" constant="23" id="clP-U8-2YY"/>
+                                                <constraint firstItem="gYR-iK-Qd5" firstAttribute="leading" secondItem="gaa-hB-alb" secondAttribute="leading" id="dla-Sw-7G5"/>
                                                 <constraint firstItem="hPy-IP-hPy" firstAttribute="top" secondItem="15c-YL-MGQ" secondAttribute="topMargin" constant="-4" id="hdS-Yf-Bpf"/>
                                                 <constraint firstItem="hPy-IP-hPy" firstAttribute="leading" secondItem="FIK-Ec-A3k" secondAttribute="trailing" constant="8" id="nIg-hS-Kmv"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="hPy-IP-hPy" secondAttribute="trailing" constant="-24" id="pDU-nG-ldV"/>
+                                                <constraint firstItem="gYR-iK-Qd5" firstAttribute="top" secondItem="gaa-hB-alb" secondAttribute="bottom" constant="8" id="pSX-Ph-ubv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

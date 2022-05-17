@@ -104,9 +104,7 @@ extension WeatherViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell") as? CurrentForecastTableViewCell else {
-                return CurrentForecastTableViewCell()
-            }
+            let cell = CurrentForecastTableViewCell()
             
             cell.temperatureLabel.text = "\(forecast?.temp ?? -99999)"
             cell.mainLabel.text = "\(forecast?.weather.first?.main ?? "")"
