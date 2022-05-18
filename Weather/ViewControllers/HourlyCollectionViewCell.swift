@@ -30,5 +30,6 @@ final class HourlyCollectionViewCell: UICollectionViewCell {
         temperatureLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
         temperatureLabel.numberOfLines = 0
         temperatureLabel.textAlignment = .right
+        temperatureLabel.backgroundColor = .systemBackground
     }
 }
