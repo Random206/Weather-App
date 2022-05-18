@@ -15,16 +15,8 @@ final class CurrentForecastTableViewCell: UITableViewCell {
     @IBOutlet weak var windDirectionLabel: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
     
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override func prepareForReuse() {
+        weatherIconImageView.transform = CGAffineTransform(rotationAngle: 0)
     }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-        
-        
-        
-    }
+
 }

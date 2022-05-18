@@ -91,8 +91,6 @@ extension WeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1 {
             return "Hourly Forecast"
-        } else if section == 2 {
-            return "Daily Forecast"
         }
         return nil
     }
@@ -101,11 +99,15 @@ extension WeatherViewController: UITableViewDataSource {
         if indexPath.section == 1 {
             return 100
         }
+        
+        if indexPath.section == 0 {
+            return 166
+        }
         return UITableView.automaticDimension
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,6 +134,9 @@ extension WeatherViewController: UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
     }
     
 }
