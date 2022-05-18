@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Weather
 //
-//  Created by Toby Patton on 27/4/2022.
+//  Created by Toby Patton on 29/4/2022.
 //
 
 import UIKit
@@ -13,10 +13,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let location = Location.stored() else { return }
+        guard let nav = window?.rootViewController as? UINavigationController else { return }
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let weatherVC = storyBoard.instantiateViewController(withIdentifier: "weatherForecast") as? WeatherViewController else { return }
+        weatherVC.city = location
+        
+        nav.viewControllers.append(weatherVC)
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -1,9 +1,9 @@
-    //
-    //  CurrentForecaseTableViewCell.swift
-    //  WeatherApp
-    //
-    //  Created by Beau Nouvelle on 2020-10-19.
-    //
+//
+//  CurrentForecastTableViewCell.swift
+//  Weather
+//
+//  Created by Toby Patton on 29/4/2022.
+//
 
 import Foundation
 import UIKit
@@ -14,4 +14,17 @@ final class CurrentForecastTableViewCell: UITableViewCell {
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var windDirectionLabel: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
+    
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        
+        
+        
+    }
 }

@@ -1,9 +1,9 @@
-    //
-    //  ForecastViewController.swift
-    //  WeatherApp
-    //
-    //  Created by Beau Nouvelle on 2020-09-24.
-    //
+//
+//  WeatherViewController.swift
+//  Weather
+//
+//  Created by Toby Patton on 29/4/2022.
+//
 
 import Foundation
 import UIKit
@@ -33,6 +33,16 @@ class WeatherViewController: UIViewController {
     }
     
     @objc func favButtonTapped() {
+        
+        
+        
+        /*
+         Commented out incase needed for later
+         
+         UIView.animate(withDuration: 0.2) {
+            self.navigationItem.rightBarButtonItem?.tintColor = .systemOrange
+        }*/
+        
         if Location.stored() == city {
             UserDefaults.standard.setValue(nil, forKey: "cityName")
             navigationItem.rightBarButtonItem?.image = UIImage(systemName: "star.fill")
@@ -110,6 +120,10 @@ extension WeatherViewController: UITableViewDataSource {
             cell.mainLabel.text = "\(forecast?.weather.first?.main ?? "")"
             cell.weatherIconImageView?.image = UIImage(named: forecast?.weather.first?.icon ?? "01d")
             cell.weatherIconImageView.layer.cornerRadius = 5
+            
+            UIView.animate(withDuration: 5) {
+                cell.weatherIconImageView.transform = CGAffineTransform(rotationAngle: .pi)
+            }
             
             return cell
         } else if indexPath.section == 1 {

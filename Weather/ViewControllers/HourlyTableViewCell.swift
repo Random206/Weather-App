@@ -1,9 +1,9 @@
-    //
-    //  HourlyTableviewCell.swift
-    //  WeatherApp
-    //
-    //  Created by Beau Nouvelle on 2020-10-08.
-    //
+//
+//  HourlyTableViewCell.swift
+//  Weather
+//
+//  Created by Toby Patton on 29/4/2022.
+//
 
 import Foundation
 import UIKit
@@ -12,11 +12,13 @@ final class HourlyTableViewCell: UITableViewCell {
     
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var hourly: [Hourly]?
+    let dateFormatter = DateFormatter()
     
     init(hourly: [Hourly]?) {
         self.hourly = hourly
         super.init(style: .default, reuseIdentifier: nil)
         setupSubviews()
+        dateFormatter.timeStyle = .short
         collectionView.reloadData()
     }
     
@@ -60,9 +62,7 @@ extension HourlyTableViewCell: UICollectionViewDataSource {
         }
         
         let hour = hourly?[indexPath.row]
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .short
-        cell.temperatureLabel.text = dateFormatter.string(from: hour!.dt)
+        cell.temperatureLabel.text = dateFormatter.string(from: hour!.dt) + "\n\(hour?.temp ?? -273)" + "\n\(hour?.weather.first?.main ?? "")"
         
         return cell
     }

@@ -1,9 +1,9 @@
-    //
-    //  HourlyCollectionViewCell.swift
-    //  WeatherApp
-    //
-    //  Created by Beau Nouvelle on 2020-10-22.
-    //
+//
+//  HourlyCollectionViewCell.swift
+//  Weather
+//
+//  Created by Toby Patton on 29/4/2022.
+//
 
 import Foundation
 import UIKit
@@ -28,5 +28,7 @@ final class HourlyCollectionViewCell: UICollectionViewCell {
         temperatureLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         temperatureLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
         temperatureLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        temperatureLabel.numberOfLines = 0
+        temperatureLabel.textAlignment = .right
     }
 }

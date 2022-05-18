@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  CitySearchTableViewController.swift
 //  Weather
 //
-//  Created by Toby Patton on 27/4/2022.
+//  Created by Toby Patton on 29/4/2022.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class citySearchTableViewController: UIViewController, UISearchBarDelegate, MKLo
     
     var city: Location? {
         didSet {
-                // do stuff here when City is updated.
+            // do stuff here when City is updated.
             performSegue(withIdentifier: "showWeather", sender: self)
         }
     }
@@ -84,7 +84,7 @@ class citySearchTableViewController: UIViewController, UISearchBarDelegate, MKLo
     
     // This method is called when there was an error with the searchCompleter
     func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
-            // Error
+        // Error
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

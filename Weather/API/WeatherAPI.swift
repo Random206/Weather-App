@@ -14,10 +14,11 @@ class WeatherAPI {
     func getWeather(for city: Location, completion: @escaping (Result<Forecast, Error>) -> ()) {
         var urlComponents = URLComponents(url: baseUrl, resolvingAgainstBaseURL: true)
         
-            //        #warning("Replace Your Key")
+        //        #warning("Replace Your Key")
         let queries = [URLQueryItem(name: "lat", value: "\(city.lat)"),
                        URLQueryItem(name: "lon", value: "\(city.lon)"),
-                       URLQueryItem(name: "appid", value: "505d56233b03b6f23ec795535acd81e8")]
+                       URLQueryItem(name: "appid", value: "505d56233b03b6f23ec795535acd81e8"),
+                       URLQueryItem(name: "units", value: "metric")]
         
         urlComponents?.queryItems = queries
         

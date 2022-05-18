@@ -1,8 +1,8 @@
 //
 //  Forecast.swift
-//  WeatherApp
+//  Weather
 //
-//  Created by Beau Nouvelle on 2020-09-24.
+//  Created by Toby Patton on 29/4/2022.
 //
 
 import Foundation
